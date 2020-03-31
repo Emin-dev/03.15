@@ -1,28 +1,189 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
 }
 
+html:hover,
+body:hover,
+div:hover,
+span:hover,
+applet:hover,
+object:hover,
+iframe:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+p:hover,
+blockquote:hover,
+pre:hover,
+a:hover,
+abbr:hover,
+acronym:hover,
+address:hover,
+big:hover,
+cite:hover,
+code:hover,
+del:hover,
+dfn:hover,
+em:hover,
+img:hover,
+ins:hover,
+kbd:hover,
+q:hover,
+s:hover,
+samp:hover,
+small:hover,
+strike:hover,
+strong:hover,
+sub:hover,
+sup:hover,
+tt:hover,
+var:hover,
+b:hover,
+u:hover,
+i:hover,
+center:hover,
+dl:hover,
+dt:hover,
+dd:hover,
+ol:hover,
+ul:hover,
+li:hover,
+fieldset:hover,
+form:hover,
+label:hover,
+legend:hover,
+table:hover,
+caption:hover,
+tbody:hover,
+tfoot:hover,
+thead:hover,
+tr:hover,
+th:hover,
+td:hover,
+article:hover,
+aside:hover,
+canvas:hover,
+details:hover,
+embed:hover,
+figure:hover,
+figcaption:hover,
+footer:hover,
+header:hover,
+hgroup:hover,
+menu:hover,
+nav:hover,
+output:hover,
+ruby:hover,
+section:hover,
+summary:hover,
+time:hover,
+mark:hover,
+audio:hover,
+video:hover {
+  text-decoration: none;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -30,17 +191,21 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 
@@ -55,5 +220,32 @@ table {
       -ms-user-select: none;
           user-select: none;
   cursor: default;
+}
+
+#header .col-6 > a {
+  font-weight: 800;
+  font-size: 30px;
+  color: black;
+}
+
+#header .col-6 > a span {
+  color: #fdbe34;
+}
+
+#header p a {
+  border: 1px solid #e6e6e6;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+#header p a i {
+  position: relative;
+  color: #808080;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
