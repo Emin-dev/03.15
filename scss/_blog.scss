@@ -1,4 +1,8 @@
 main  #blog {
+    a{
+        color: $g;
+        transition: .5s;
+    }
     padding: 70px 0;
     text-align: center;
 
