@@ -1,16 +1,16 @@
-@mixin font700 {
+// @mixin font700 {
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: $b;
-}
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 30px;
+//     color: $b;
+// }
 
-@mixin fontMix($w:400,$s:16px,$h:29px,$c:$b){
+// @mixin fontMix($w:400,$s:16px,$h:29px,$c:$b){
 
-    font-weight: $w;
-    font-size: $s;
-    line-height: $h;
-    color: $c;
-}
+//     font-weight: $w;
+//     font-size: $s;
+//     line-height: $h;
+//     color: $c;
+// }
 

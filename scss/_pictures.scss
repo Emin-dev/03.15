@@ -1,0 +1,45 @@
+
+main  #project {
+    .work {
+        height: 400px;
+        background-size: cover;
+
+        button {
+            cursor: zoom-in;
+            border: none;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            color: $w;
+            background-color: $y;
+            outline: none;
+        }
+    }
+
+    .overlay {
+        visibility: hidden;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(18, 14, 62, 0.6);
+    }
+
+    .text {
+        z-index: 1;
+        position: absolute;
+        color: $w;
+        padding: 1rem;
+        bottom: 0;
+
+        a {
+            color: $w;
+        }
+    }
+
+    .work:hover .overlay {
+        visibility: visible;
+    }
+}

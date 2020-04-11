@@ -1,0 +1,257 @@
+
+footer {
+    color: $w;
+
+    .bg1 {
+        background-color: #252525;
+
+        p {
+            color: gray;
+
+            a {
+                color: $y;
+            }
+        }
+
+        .social {
+            li {
+                margin-right: 10px;
+                margin-left: 0;
+            }
+
+            a {
+                font-size: 18px;
+                color: $y;
+                background-color: #333333;
+                border: none;
+
+                :hover {
+                    color: $w;
+                }
+            }
+        }
+    }
+
+    .bg2 {
+        background-color: #333333;
+    }
+
+    .list {
+        display: block !important;
+
+        li {
+            padding-bottom: 10px;
+        }
+
+        a {
+            color: gray;
+        }
+    }
+
+    form .row {
+        margin: 0;
+    }
+
+    form * {
+
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        margin-bottom: 8px;
+        width: 100%;
+
+        [class^=col-] * {
+            padding: 10px;
+        }
+
+        button {
+            background-color: $y;
+        }
+    }
+
+    h5 {
+        padding: 0 !important;
+        font-size: 18px !important;
+        margin: 20px 0;
+    }
+}
+
+.home {
+    height: 400px;
+    background-image: url('../img/bg_3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.544);
+    background-blend-mode: color-burn;
+
+    .text {
+        span {
+            color: rgba(255, 255, 255, .5);
+
+            a {
+                color: rgba(255, 255, 255, .7);
+
+                &:hover {
+                    color: $y;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 70px;
+            color: #fff;
+            line-height: 1.2;
+            font-weight: 800;
+            font-family: poppins, Arial, sans-serif;
+        }
+    }
+}
+
+            // --------------- OUR TEAM --------------
+
+#team_page {
+    #team {
+        &>.container {
+            margin-top: 3rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .flipcard {
+            height: 400px;
+            width: 100%;
+            perspective: 1000px;
+
+            .inner-card {
+                background-image: linear-gradient(#a5f9a5, #7fb57f);
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+            }
+
+            .front,
+            .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+            }
+
+            .front {
+
+                h4,
+                h6 {
+                    text-align: left;
+                    color: $w;
+                }
+            }
+
+            .back {
+                background-color: $y;
+                color: $w;
+                transform: rotateY(180deg);
+
+                p {
+                    padding: 1rem;
+                    margin-top: 2rem;
+                }
+
+                .img-container {
+                    width: 40px;
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+
+                .info {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    right: 20px;
+
+                    .text {
+                        margin-left: 20px;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .flipcard:hover .inner-card {
+            transform: rotateY(180deg);
+        }
+
+        @media (max-width:991px) {
+
+            .inner-card {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+            // --------------- CONTACT --------------
+
+#contact_page {
+    main>.container {
+        padding: 80px 0;
+
+        .left {
+            background: #e8edf0;
+
+            form {
+                label {
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .form-control:not(textarea) {
+                    height: 52px !important;
+                    padding: 10px !important;
+                    border: none;
+                }
+
+                textarea {
+                    border: none;
+                }
+
+                [type=submit] {
+                    background-color: $y;
+                    color: $w;
+                    font-size: 14px;
+                    padding: 15px 20px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .dbox {
+        .icon {
+            background-color: $m;
+            color: $w;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            font-size: 25px;
+        }
+
+        .text {
+            text-align: center;
+            margin: 20px 0;
+
+            a {
+                color: $y;
+            }
+        }
+    }
+}

@@ -105,11 +105,17 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 ol,
 ul {
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
 }
 blockquote,
 q {
@@ -131,3 +137,4 @@ table {
   user-select: none;
   cursor: default;
 }
+

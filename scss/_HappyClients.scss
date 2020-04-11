@@ -1,0 +1,43 @@
+main #clinets {
+    background-color: $y;
+    padding: 50px 0;
+
+    h1,
+    h6 {
+        font-weight: 900;
+    }
+
+    .col-4:first-child {
+        width: 20%;
+    }
+
+    .card {
+        border: none;
+
+        span {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: -20px;
+            left: 25px;
+            border-radius: 50%;
+            background-color: $y;
+            color: $w;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+        p {
+            color: gray;
+        }
+
+        h6 {
+            font-weight: normal;
+        }
+    }
+
+}

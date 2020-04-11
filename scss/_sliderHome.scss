@@ -1,0 +1,48 @@
+main .container-fluid {
+    padding: 0;
+
+    .row {
+        margin: 0;
+
+        .col-12 {
+            padding: 0;
+        }
+    }
+}
+
+main .carusel {
+    height: 700px;
+
+    .row {
+        background-image: url('../img/bg_1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.299);
+        background-blend-mode: color-burn;
+        height: 700px;
+
+        .text {
+            height: 100%;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 800;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                color: #fff;
+                line-height: 1;
+                text-shadow: 0 3px 25px rgba(0, 0, 0, .1);
+            }
+
+            h2 {
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: poppins, Arial, sans-serif;
+                font-weight: 700;
+                color: #fdbe34;
+                letter-spacing: 4px;
+            }
+        }
+    }
+}

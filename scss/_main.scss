@@ -4,3 +4,50 @@ $w: white;
 $b: black;
 $g:#808080;
 $y:#fdbe34;
+$m:#00043c;
+
+.social li {
+    margin: 3px;
+
+    a {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #e6e6e6;
+        color: #4d4d4d;
+        box-sizing: border-box;
+
+        &:hover {
+            transition: .5s;
+            background-color: $y;
+            color: $w;
+            border: none;
+            box-sizing: border-box;
+
+        }
+    }
+}
+
+
+@keyframes btn-wave {
+    from {
+        border: 0px solid #fdbe34;
+    }
+
+    50% {
+        border: 2px solid #fdbd348e;
+    }
+
+    75% {
+        border: 4px solid #fd343444;
+
+    }
+
+    100% {
+        border: 7px solid #fdbd3400;
+    }
+}

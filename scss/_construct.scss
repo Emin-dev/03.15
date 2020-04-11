@@ -1,0 +1,115 @@
+#construct {
+    .services-1 [class^=col-] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        background-color: $y;
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        z-index: 1;
+        box-shadow: 0 10px 30px -4px rgba(0, 0, 0, .15);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            content: '';
+            background: #fede99;
+            border-radius: 50%;
+            z-index: -1;
+            width: 40px;
+            height: 40px;
+        }
+
+        img {
+            width: 60px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .services-2 {
+        &>[class^=col-] {
+            padding: 4rem 2rem 2rem 2rem;
+        }
+
+        h5 {
+            font-weight: 700;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        &>:nth-child(1) {
+            background: rgba(0, 0, 0, .05);
+
+            .icn::after {
+                background: $y;
+            }
+
+            p {
+                color: gray;
+            }
+        }
+
+        &>:nth-child(2) {
+            background: $y;
+            color: $b;
+
+            .icn::after {
+                background: $w;
+            }
+        }
+
+        &>:nth-child(3) {
+            background: $m;
+
+            .icn::after {
+                background: rgba(255, 255, 255, .1) !important;
+            }
+
+            .col-8 {
+                color: $w;
+            }
+        }
+
+        .icn {
+            border-radius: 50%;
+            border: 2px dotted grey;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+
+            &::after {
+                top: 30px;
+                content: '';
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 0;
+            }
+
+            img {
+                position: relative;
+                top: 18px;
+                width: 70px;
+                z-index: 1;
+
+            }
+        }
+    }
+
+}
