@@ -1,0 +1,54 @@
+
+    main>.container {
+        padding: 80px 0;
+
+        .left {
+            background: #e8edf0;
+
+            form {
+                label {
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .form-control:not(textarea) {
+                    height: 52px !important;
+                    padding: 10px !important;
+                    border: none;
+                }
+
+                textarea {
+                    border: none;
+                }
+
+                [type=submit] {
+                    background-color: $y;
+                    color: $w;
+                    font-size: 14px;
+                    padding: 15px 20px;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .dbox {
+        .icon {
+            background-color: $m;
+            color: $w;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            font-size: 25px;
+        }
+
+        .text {
+            text-align: center;
+            margin: 20px 0;
+
+            a {
+                color: $y;
+            }
+        }
+    }

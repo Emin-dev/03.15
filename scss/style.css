@@ -1108,10 +1108,10 @@ footer h5 {
   width: 100%;
   height: 100%;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.6s;
-  transition: -webkit-transform 0.6s;
-  transition: transform 0.6s;
-  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1177,5 +1177,55 @@ footer h5 {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
+}
+
+main > .container {
+  padding: 80px 0;
+}
+
+main > .container .left {
+  background: #e8edf0;
+}
+
+main > .container .left form label {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main > .container .left form .form-control:not(textarea) {
+  height: 52px !important;
+  padding: 10px !important;
+  border: none;
+}
+
+main > .container .left form textarea {
+  border: none;
+}
+
+main > .container .left form [type=submit] {
+  background-color: #fdbe34;
+  color: white;
+  font-size: 14px;
+  padding: 15px 20px;
+  border: none;
+}
+
+.dbox .icon {
+  background-color: #00043c;
+  color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+}
+
+.dbox .text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dbox .text a {
+  color: #fdbe34;
 }
 /*# sourceMappingURL=style.css.map */
